@@ -19,9 +19,24 @@
  * @returns {string} The data type of the parameter.
  */
 export function tellType (data) {
-  const result = 'You sent me '
+  let result = 'You sent me '
 
-  // TODO: Write your code here.
-
+  if (typeof (data) === 'string') {
+    result += 'a string.'
+  } else if (typeof (data) === 'number') {
+    result += 'a number.'
+  } else if (typeof (data) === 'boolean') {
+    result += 'a boolean.'
+  } else if (typeof (data) === 'undefined') {
+    result += 'an undefined value.'
+  } else if (typeof (data) === 'object') {
+    result += 'an object.'
+  } else if (typeof (data) === typeof 'Array') {
+    result += 'an array.'
+  } else if (typeof (data) === 'function') {
+    result += 'a function.'
+  } else if (typeof (data) === typeof 'null') {
+    result += 'a null value.'
+  }
   return result
 }
