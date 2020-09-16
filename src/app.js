@@ -11,4 +11,10 @@ import * as determinator from './determinator.js'
 
 console.log(determinator.tellType('Hasta la vista, baby.'))
 console.log(determinator.tellType(false))
-// ADD CONSOLE LOGS
+console.log(determinator.tellType(3))
+console.log(determinator.tellType({}))
+console.log(determinator.tellType([]))
+console.log(determinator.tellType(undefined))
+console.log(determinator.tellType(function () {}))
+console.log(determinator.tellType(null))
+console.log(determinator.tellType())
